@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <!-- JS -->
+    <script src="./app.js" defer></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,500;0,700;0,900;1,300;1,500&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <title>Project Tamagotchi</title>
+</head>
+<body id="effect" class="light">
+    <main>
+        <div>
+            <div class="menu-screen">
+                <div class="menu">
+                    <h1>Tamagotchi</h1>
+                    <p>version <strong>1.0</strong></p>
+                        <div class="menu-buttons">
+                            <span class="menu-cover">
+                            <i>LETS PlAY!</i>
+                            </span>
+                            <a href="#" class="menu-settings start">START</a>
+                            <i class="divider"> | </i>
+				            <a href="#" class="menu-settings" id="dark-mode-button">DARK MODE</a>
+                        </div>
+                </div>
+            </div>
+
+            <div class="game-screen">
+                <div id="stats">
+                    <h2 class="nameDisplay">Hello</h2>
+                </div>
+            
+                <div class="pet-info">
+                    <p><span id="timer">TIMER: 0 </span></p>
+                    <p class="vl1"></p>
+                    <p><span id="age">AGE: 0</span></p>
+                </div>
+
+                <div class="tamagotchi">
+                    <div class="image">
+                        <img class="animated-gif" src="./resource/default.gif" alt="userPet">
+                    </div>
+                    <div class="game-functions">
+                        <a href="#" id="play-game">START</a>
+                        <a href="#" id="reset-game">RESET</a>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="pet-controls">
+                    <div class="control-box play">
+                        <p><span id="play-pet">Boredness</span></p> 
+                        <div class="progress">
+                            <div id="play-progress-fill"></div>
+                            <span id="play-text">0</span>
+                    </div>
+                    <a href="#" class="function-btn play">PLAY</a>
+                </div>
+
+                 <div class="vl"></div>
+                    <div class="control-box hunger">
+                        <p><span id="feed-pet">Hunger</span></p> 
+                        <div class="progress">
+                            <div id="feed-progress-fill"></div>
+                            <span id="feed-text">0</span>
+                        </div>
+                        <a href="#" class="function-btn feed">FEED</a>
+                    </div>
+
+                    <div class="vl"></div>
+    
+                    <div class="control-box sleep">
+                        <p><span id="sleep-pet">Tiredness</span></p> 
+                        <div class="progress">
+                            <div id="sleep-progress-fill"></div>
+                            <span id="sleep-text">0</span>
+                        </div>
+                        <a href="#" class="function-btn sleep">SLEEP</a>
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+    </main>
+</body>
+</html>
+          
+
+            
+            

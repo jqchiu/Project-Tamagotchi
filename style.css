@@ -1,0 +1,375 @@
+/* :root {
+        --white: #e7e7de;
+        --blue: #00587a;
+        --yellow: #ffd56b;
+        --dark-blue: #0f3057;
+} */
+
+* {
+    box-sizing: border-box;
+  }
+
+  
+body {
+      background-color: var(--background);
+      transition: background-color 1s;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      padding: 0;
+      margin: 0;
+}
+
+.light {
+    --background: #e7e7de;
+    --background-font: #00587a;
+    --background-one: #ffd56b;
+    --background-two: #0f3057;
+}
+
+.dark {
+    --background: #0f3057;
+    --background-font: #ffd56b;
+    --background-one: #00587a;
+    --background-two: #e7e7de;
+}
+
+
+
+main {
+    min-width: 650px;
+    align-content: center;
+    padding-right: 80px;
+}
+
+.menu-screen {
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Shadows Into Light', cursive;
+    color: var(--background-font);
+    font-size: 150px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu p {
+    text-align: right;
+    margin: -60px;
+    padding-right: 89px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    color: var(--background-font);
+}
+
+.menu-buttons {
+    background: var(--background-font);
+    width: 330px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 30px;
+    border: 2px solid var(--background-font);
+    position: relative;
+    overflow: hidden;
+    transition: transform .3s linear;
+    cursor: pointer;
+    margin: 125px;
+    margin-left: 178px;
+}
+
+.menu-buttons:hover {
+    transform: scale(1.2);
+}
+  
+.menu-buttons:hover .menu-cover {
+    transform: translateY(-100%);
+}
+  
+.menu-cover {
+    background: var(--background);
+    width: 100%;
+    height: 100%;
+    color: var(--background-font);
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 50px;
+    transition: transform .6s ease-in-out;
+    z-index: 2;
+}
+
+i {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+
+.menu-settings {
+    font-size: 1em;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+    color: var(--background);
+}
+
+.menu-settings.start {
+    padding-left: 30px;
+}
+
+.menu-settings.dark {
+    padding-right: 30px;
+
+}
+
+.divider {
+    font-size: 1.2em;
+    color: var(--background);
+    padding-bottom: 2px;
+}
+
+.menu-settings:hover {
+    color: var(--background-one);
+    font-weight: 700;
+  }
+
+
+h2 {
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 120px;
+    color: var(--background-font);
+    margin: 0;
+    padding: 0;
+}
+
+.pet-info {
+    text-align: center;
+    padding-top: 30px;
+    
+}
+
+.pet-info p {
+    display: inline;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: var(--background-two);
+}
+
+.vl1 {
+    border-left: 1.5px dotted var(--background-two);
+    height: 10px;
+    padding: 2px 0px 0px 15px;
+    margin: 0;
+}
+
+#timer {
+    padding-right: 10px;
+}
+
+.image {
+    text-align: center;
+}
+
+img.animated-gif {
+    height: 300px;
+    width: auto;
+    padding: 0;
+}
+
+#play-game {
+    border: 2px solid var(--background-two);
+    color: var(--background-two);
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0px 10px 0px;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+#play-game:hover {
+    background: var(--background-two);
+    color: var(--background-one);
+    font-weight: 700;
+}
+
+#reset-game {
+    border: 2px solid var(--background-two);
+    color: var(--background-two);
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0px 10px 0px;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+#reset-game:hover {
+    background: var(--background-two);
+    color: var(--background-one);
+    font-weight: 700;
+}
+
+
+
+.tamagotchi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    height: 370px;
+    /* padding-top: 20px;
+    margin: 25px 0px; */
+
+}
+
+.pet-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 25px;
+    
+}
+
+.vl {
+    border-left: 1px dotted var(--background-two);
+    height: 10px;
+    padding-top: 150px;
+
+}
+
+.control-box p {
+    font-family: 'Shadows Into Light', cursive;
+    color: var(--background-two);
+    font-size: 30px;
+    margin: 5px 0px;
+    padding: 0;
+}
+
+
+.function-btn {
+    border: 1px solid var(--background-two);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 15px 0px;
+    padding: 5px 13px;
+    letter-spacing: 2px;
+    color: var(--background-two);
+    border-radius: 3px;
+}
+
+.function-btn:hover {
+    background: var(--background-two);
+    color: var(--background);
+    font-weight: 700;
+}
+
+.control-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.control-box.hunger {
+    padding: 0 10px;
+}
+
+.control-box.play {
+    padding-right: 10px;
+}
+
+.control-box.sleep {
+    padding-left: 10px;
+}
+
+
+.progress {
+    position: relative;
+    width: 140px;
+    height: 35px;
+    border: 2px solid var(--background-font);
+    background: var(--background);
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+#play-progress-fill {
+    width: 0%;
+    height: 100%;
+    background: var(--background-font);
+    transition: .6s ease;
+}
+
+#feed-progress-fill {
+    width: 0%;
+    height: 100%;
+    background: var(--background-font);
+    transition: .6s ease;
+}
+
+#sleep-progress-fill {
+    width: 0%;
+    height: 100%;
+    background: var(--background-font);
+    transition: .6s ease;
+}
+
+#play-text {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--background);
+}
+
+#feed-text {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--background);
+}
+
+#sleep-text {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--background);
+}
+
