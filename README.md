@@ -1,46 +1,38 @@
-# Project-Tamagotchi
+# Project-Tomagotchi
 
-////// JavaScript/jQuery Gameplay
+### Overview
 
-Hunger = 100
-Sleepiness = 100
-Boredom = 100
+This Tomagotchi project is based on the popular handheld game from the 90's called the Tomagatchi. It's a virtual handheld device where users are tasked to take care of their virtual pet. My Tomagotchi inspired game mirrors the original game where the main concept is to keep the pet alive as long as the user can. This is done by interacting with the pet via playing, feeding and giving it a proper rest. Once score reaches to 0, the games is over! Give it a Try.
 
-Keep Hunger, Sleepiness and Boredom always greater or equal to 100.
+### Feature / Gameplay
 
-////// BackEnd Functions
+For my Tomagatchi inspired game in the beginning, when you hover on the "LETS PLAY!" button an aimation will show a "START" or "DARK Mode" (Dark Mode alters the colors to a darker tone). When you press the "START" button, it will prompt you to enter your pets name. 
 
-If hunger, sleepiness and boredom reaches 0, Game Over.
+At the main screen of the game you'll be presented a Timer, Age, Start, Reset, Play, Feed, and Sleep buttons.
 
---> To do <--
+#### The list of the corresponding buttons as follows (the game is set to demo version):
+- Timer and Age: The timer will start when the game starts. For every 10 seconds Age will go up by one. Age and Timer will stop when the game ends.
 
-- Tamagotchi will start at 100 each
+- Start Button: The Start button starts the game.
 
-- For every seconds that passes each of the  Variable (Hunger, Sleepiness and Boredom) decreases to x amount.
+- Reset Button: The Reset button will reset the game and will bring you the beginning of the game.
 
-- Prevent the pet from game over by clicking the buttons Hunger, Sleepiness and Boredom. It will then add x amount to the stat.
+- Boredness, Hunger, and Tiredness Progress Bars: Each corresponding progress bars starts off with a value of 100. Once it reaches zero the game is over. A very neat feature I've added is at a certain threshold, the pet animation will change based on the pets corresponding progress bar. For example, when Boredness gets down to 50% the default animation will change to a playful animation hinting it wants you to play with it and when the game is over the animation also change and so forth. Test it out to see all 4 animations!
 
-///// Must Add
+- PLAY, FEED, and SLEEP Buttons - These buttons will allow you to interact with your pet. Each button has x amount of value that will maintain your pets health.  
 
-- Must be able to turn lights off.
-- Age must be added.
+### Technologies Used
 
-///// Extra Features
+- HTML
+- CSS
+- JavaScript
+- jQuery
 
-- 3 levels
-    - Baby
-    - Teenager
-    - Adult
+### Features to add 
 
-- 1st Level
-    - Values decreases by 1 every  5 min.
+- Character choices
+- How to Play prompt
+- Evolution from baby to adult
 
-- 2nd Level
-    - Values will fire random numbers every 3 min.
-
-- 3rd Level
-    - Values will fire random number every 1 min.
-
-/// Website
 
 https://pages.git.generalassemb.ly/jqchiu/Project-Tamagotchi/#
