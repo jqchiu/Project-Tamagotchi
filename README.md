@@ -35,5 +35,3 @@ At the main screen of the game you'll be presented a Timer, Age, Start, Reset, P
 - How to Play prompt
 - Evolution from baby to adult
 
-
-https://pages.git.generalassemb.ly/jqchiu/Project-Tamagotchi/#
